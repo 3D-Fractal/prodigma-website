@@ -332,7 +332,7 @@ const render = {
 
   partner: (s) => wrap(s, `
         <article class="pg-partner">
-          <div class="pg-partner-mark" aria-hidden="true"><span>3D</span></div>
+          <a class="pg-partner-mark" href="${s.url}" target="_blank" rel="noopener"><img src="${asset("images/3d-fractal-logo.jpg")}" srcset="${asset("images/3d-fractal-logo-280.jpg")} 280w, ${asset("images/3d-fractal-logo.jpg")} 560w" sizes="(max-width: 900px) 200px, 280px" width="560" height="406" alt="${PARTNER.name}" loading="lazy" decoding="async"></a>
           <div class="pg-partner-text">
             <p class="pg-kicker">${s.kicker}</p>
             <h2>${s.heading}</h2>

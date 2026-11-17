@@ -542,13 +542,8 @@ a:hover .pg-link span, .pg-link:hover span { transform: translateX(3px); }
   background: #fff;
   box-shadow: var(--shadow);
 }
-.pg-partner-mark {
-  display: grid; place-items: center;
-  width: 100%; max-width: 260px; aspect-ratio: 1;
-  border-radius: 28%;
-  background: linear-gradient(145deg, var(--forest) 0%, var(--forest-deep) 100%);
-}
-.pg-partner-mark span { color: var(--apricot); font-family: var(--serif); font-size: clamp(56px, 7vw, 92px); letter-spacing: .02em; }
+.pg-partner-mark { display: block; width: 100%; max-width: 280px; justify-self: center; }
+.pg-partner-mark img { display: block; width: 100%; height: auto; }
 .pg-partner-text { display: grid; gap: 16px; justify-items: start; }
 .pg-partner-text .pg-kicker { margin-bottom: -4px; }
 .pg-partner-text > p:not(.pg-kicker) { color: var(--text); font-size: 18px; line-height: 1.7; max-width: 62ch; }
@@ -561,7 +556,7 @@ a:hover .pg-link span, .pg-link:hover span { transform: translateX(3px); }
 
 @media (max-width: 900px) {
   .pg-partner { grid-template-columns: 1fr; }
-  .pg-partner-mark { max-width: 140px; }
+  .pg-partner-mark { max-width: 200px; justify-self: start; }
 }
 
 /* Smala mobiler: ikon-knapp för menyn så att logga, språk och meny ryms på en rad. */
