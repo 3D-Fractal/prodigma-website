@@ -1,0 +1,5 @@
+# Sidorna har noindex i <meta name="robots">.
+User-agent: *
+Allow: /
+
+Sitemap: https://prodigma.se/sitemap.xml
